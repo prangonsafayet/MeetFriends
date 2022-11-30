@@ -1,12 +1,18 @@
-const Todo = () => {
-    return ( 
-        <div className="card">
-            <h2>TITLE</h2>
-            <div className="actions">
-                <button className="btn">Delete</button>
-            </div>
-        </div>
-     );
-}
- 
+const Todo = (props) => {
+  const deleteHandler = () => {
+    console.log("clicked");
+  };
+
+  return (
+    <div className="card">
+      <h2>{props.title}</h2>
+      <div className="actions">
+        <button className="btn" onClick={deleteHandler}>
+          Delete
+        </button>
+      </div>
+    </div>
+  );
+};
+
 export default Todo;
