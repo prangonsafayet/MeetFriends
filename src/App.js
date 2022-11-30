@@ -8,6 +8,6 @@ const App = () => {
       <Todo title={"test3"} />
     </div>
   );
-}
+};
 
 export default App;
